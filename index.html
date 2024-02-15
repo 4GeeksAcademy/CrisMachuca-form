@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="card text-center container mt-5  p-0">
+        <div class="card-header text-start">
+          <h3>Payment form example</h3>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-danger text-start" role="alert">
+                Some fields are missing
+              </div>
+            <form method="post" class="row g-3">
+                <div class="col-md-4 text-start">
+                    <label for="inputCard" class="form-label">Card #</label>
+                    <input type="text" maxlength="16" class="form-control" id="inputCard" placeholder="XXXXXXXXXXXXXXXX">
+                </div>
+                <div class="col-md-4 text-start">
+                    <label for="inputCVC" class="form-label">CVC #</label>
+                    <input type="text" class="form-control" id="inputCVC" maxlength="4" step="1" placeholder="ccv">   
+                </div>
+                <div class="col-md-4 text-start">
+                    <label for="inputAmount" class="form-label">Amount</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1"><b>$</b></span>
+                      <input type="number" class="form-control" placeholder="Amount" aria-label="Amount" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-md-6 text-start">
+                  <label for="inputFName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="inputFName">
+                </div>
+                <div class="col-md-6 text-start">
+                  <label for="inputLName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="inputLName">
+                </div>
+                <div class="col-md-6 text-start">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4 text-start">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Pick a state</option>
+                    <option value="1">Alabama</option>
+                    <option value="2">Alaska</option>
+                    <option value="3">Arizona</option>
+                    <option value="4">Arkansas</option>
+                    <option value="5">California</option>
+                    <option value="6">Colorado</option>
+                    <option value="7">Connecticut</option>
+                    <option value="8">Delaware</option>
+                    <option value="9">Florida</option>
+                    <option value="10">Georgia</option>
+                    <option value="11">Hawaii</option>
+                    <option value="12">Idaho</option>
+                    <option value="13">Illinois</option>
+                    <option value="14">Indiana</option>
+                    <option value="15">Iowa</option>
+                    <option value="16">Kansas</option>
+                    <option value="17">Kentucky</option>
+                    <option value="18">Louisiana</option>
+                    <option value="19">Maine</option>
+                    <option value="20">Maryland</option>
+                    <option value="21">Massachussets</option>
+                    <option value="22">Michigan</option>
+                    <option value="23">Minnesota</option>
+                    <option value="24">Mississippi</option>
+                    <option value="25">Missouri</option>
+                    <option value="26">Montana</option>
+                    <option value="27">Nebraska</option>
+                    <option value="28">Nevada</option>
+                    <option value="29">New Hampshire</option>
+                    <option value="30">New Jersey</option>
+                    <option value="31">New Mexico</option>
+                    <option value="32">New York</option>
+                    <option value="33">North Carolina</option>
+                    <option value="34">North Dakota</option>
+                    <option value="35">Ohio</option>
+                    <option value="36">Oklahoma</option>
+                    <option value="37">Oregon</option>
+                    <option value="38">Pennsylvania</option>
+                    <option value="39">Rhode Island</option>
+                    <option value="40">South Carolina</option>
+                    <option value="41">South Dakota</option>
+                    <option value="42">Tennessee</option>
+                    <option value="43">Texas</option>
+                    <option value="44">Utah</option>
+                    <option value="45">Vermont</option>
+                    <option value="46">Virginia</option>
+                    <option value="47">Washington</option>
+                    <option value="48">West Virginia</option>
+                    <option value="49">Wisconsin</option>
+                    <option value="50">Wyoming</option>
+                  </select>
+                </div>
+                <div class="col-md-2 text-start">
+                  <label for="inputZip" class="form-label">Postal Code</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-6 text-start"> 
+                  <label for="payment" class="form-label d-block">We accept:</label>
+                  <div class="bg-secondary ps-2 rounded d-inline-block">   
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard" style="color:#fff"></i></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa" style="color:#fff"></i></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club" style="color:#fff"></i></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-amex" style="color:#fff"></i></label>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-start">
+                    <label>Message</label>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <p class="fw-light">Add any notes here</p>
+                </div>
+                <div class="col-12 card-footer text-end w-100">
+                  <button type="submit" class="btn btn-secondary">Cancel</button>
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </form>
+        </div>
+    </div>
+      </div>
+
+      <script src="https://kit.fontawesome.com/63ec4f579b.js" crossorigin="anonymous"></script>
+</body>
+</html>
